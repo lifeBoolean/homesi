@@ -1,0 +1,9 @@
+label{cursor:pointer;}
+.h24{
+	font-size: 24px;
+}
+.wrap{
+	margin: 0 auto;
+	width: 800px;
+	/* border: 1px solid red; */
+}
