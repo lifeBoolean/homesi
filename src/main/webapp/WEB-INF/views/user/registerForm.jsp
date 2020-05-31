@@ -21,9 +21,13 @@
 			<dt>비밀번호</dt>
 			<dd><input type="text" name="userPw" id="userPw" /></dd>
 			<dt>비밀번호확인</dt>
-			<dd><input type="text" name="userPw" id="userPwCnf" /></dd>
+			<dd><input type="text" name="userPwCnf" id="userPwCnf" /></dd>
 			<dt>이름</dt>
 			<dd><input type="text" name="userName" id="userName" /></dd>
+			<dt>전화번호</dt>
+			<dd><input type="text" name="phone" id="phone" /></dd>
+			<dt>이메일</dt>
+			<dd><input type="text" name="email" id="email" /></dd>
 		</dl>
 			<button type="submit" id="memberSubmit">등록</button>
 		</form>
