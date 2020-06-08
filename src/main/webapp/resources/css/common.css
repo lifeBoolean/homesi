@@ -7,3 +7,10 @@ label{cursor:pointer;}
 	width: 800px;
 	/* border: 1px solid red; */
 }
+.wrap dl>dt{
+	float: left;
+}
+.wrap dl>dt{
+	width: 100px;
+	border: 1px solid red;
+}

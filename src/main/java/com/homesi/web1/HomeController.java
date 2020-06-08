@@ -1,4 +1,4 @@
-package net.homesi.web1;
+package com.homesi.web1;
 
 import java.text.DateFormat;
 import java.util.Date;
