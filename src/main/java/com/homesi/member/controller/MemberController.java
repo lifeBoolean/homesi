@@ -30,4 +30,11 @@ public class MemberController {
 		return "redirect:/";
 	}
 	
+	@RequestMapping(value = "/list", method=RequestMethod.GET)
+	public String list(Model model) {
+		memberService.memberList(model);
+		
+		return "/user/list";
+	}
+	
 }

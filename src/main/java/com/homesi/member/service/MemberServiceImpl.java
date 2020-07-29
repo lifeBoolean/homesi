@@ -1,5 +1,7 @@
 package com.homesi.member.service;
 
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
@@ -14,10 +16,14 @@ public class MemberServiceImpl implements MemberService {
 	MemberDaoImpl memberDao;
 
 	@Override
-	public void memberInput(MemberVo memberVo, Model model) {
-		
-		memberDao.memberInput(memberVo);
-		
+	public void memberInput(MemberVo memberVo, Model model) {		
+		memberDao.memberInput(memberVo);		
+	}
+	
+	@Override
+	public void memberList(Model model) {
+		List<MemberVo> members = memberDao.memberList();
+		model.addAttribute("members", members);
 	}
 
 }

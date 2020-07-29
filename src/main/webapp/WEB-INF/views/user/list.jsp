@@ -17,17 +17,15 @@
 			<td>이름</td>
 			<td>이메일</td>
 			<td>전화번호</td>
-			<td>성별</td>
 			<td>생년월일</td>
 		</tr>
-		<c:forEach items="${members}" var="member">
+		<c:forEach items="${members}" var="members">
 		<tr>
-			<td>${member.userId}</td>
-			<td>${member.userName}</td>
-			<td>${member.email}</td>
-			<td>${member.phone}</td>
-			<td>${member.gender}</td>
-			<td>${member.birthday}</td>
+			<td>${members.userId}</td>
+			<td>${members.userName}</td>
+			<td>${members.email}</td>
+			<td>${members.phone}</td>
+			<td>${members.regDate}</td>
 		</tr>		
 		</c:forEach>
 		

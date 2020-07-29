@@ -3,11 +3,15 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.homesi.memberMapper">
+<mapper namespace="memberMapper">
 
 	<insert id="memberInsert">
 		INSERT INTO MEMBERS (USERID, USERPW, USERNAME, PHONE, EMAIL, REGDATE)
 				VALUES (#{userId}, #{userPw}, #{userName}, #{phone}, #{email}, SYSDATE)
 	</insert>
+	
+	<select id="list" resultType="com.homesi.member.vo.MemberVo">
+	SELECT * FROM MEMBERS
+	</select>
 
 </mapper>
